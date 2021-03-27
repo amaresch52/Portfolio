@@ -1,15 +1,16 @@
 :root {
     --primary: silver;
 }
+/* grid set up for page */
 body{
-    background-color: whitesmoke;
+    background-color: var(--primary);
     display: grid;
     width: 100%;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 100px;
     gap: 10px;
 }
-
+/* nav bar location and color*/
 nav {
     background-color: cornflowerblue;
     color:black;
@@ -23,9 +24,9 @@ ul {
     list-style-type: none;
     font-size: 20px;
 }
-
+/*main area color and position*/
 main {
-    background-color: turquoise;
+    background-color: white;
     grid-row: 2 / span 8;
     grid-column: 1 / span 5;
     border: 2px solid black;
@@ -43,16 +44,10 @@ nav a {
     }
 
 nav a:hover {
-    color:tomato;
+    color:black;
     text-transform: uppercase;
     list-style: none;
 }
-
-/*.main { 
-     max-width: 100%;
-     grid-area: 2/2/4/4;
-  
-} */
 
 #hero {
     background-color: #d8bfd8;}
@@ -72,24 +67,27 @@ nav a:hover {
     background-color: yellow;}
     img { max-width: 50%;
         height: auto;
-        
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+       
 }
 
 
 #projects {
     
-    background-color: violet;
+    background-color:cornflowerblue;
     display: grid;
   
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(3, 1fr);
     gap: 10px;
     border: 2px solid black;
-
+    
 }
 
-#accessability {
-    grid-column: 2/ span 5;
+#accessability a {
+    grid-column: 2 / span 5;
 }
 
 #contact-me {
@@ -105,17 +103,16 @@ footer {
     text-align: center;
 }
 
+/* screen size changes*/
 @media screen and (min-width: 600px) {
    body {
-       background:tomato;}
-    #hero h2 { 
-           background-color: blue;
+       background: black;}
        }
-    }
+    
 
 @media screen and (min-width: 900px) {
     body {
-        background-color: yellowgreen;
+        background-color: slategray;
         
     }
 }
