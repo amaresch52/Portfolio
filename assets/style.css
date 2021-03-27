@@ -1,0 +1,121 @@
+:root {
+    --primary: silver;
+}
+body{
+    background-color: whitesmoke;
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 100px;
+    gap: 10px;
+}
+
+nav {
+    background-color: cornflowerblue;
+    color:black;
+    grid-row: 1;
+    grid-column: 1 / span 4;
+    font-size: 200%;
+    border: 2px solid black;
+}
+
+ul {
+    list-style-type: none;
+    font-size: 20px;
+}
+
+main {
+    background-color: turquoise;
+    grid-row: 2 / span 8;
+    grid-column: 1 / span 5;
+    border: 2px solid black;
+}
+
+nav h1 {
+    font-size: 35px;
+    float: left;
+    text-align: center;
+}
+
+nav a {
+    float: right;
+    margin: 5px 5px;
+    }
+
+nav a:hover {
+    color:tomato;
+    text-transform: uppercase;
+    list-style: none;
+}
+
+/*.main { 
+     max-width: 100%;
+     grid-area: 2/2/4/4;
+  
+} */
+
+#hero {
+    background-color: #d8bfd8;}
+    img { grid-area: 2/1/5/4 ;}
+
+
+.heroContents {
+    	
+	height: 50%;
+	background-position: center;
+	background-repeat: no-repeat;
+	position: relative;
+}
+}    
+
+#about-me {
+    background-color: yellow;}
+    img { max-width: 50%;
+        height: auto;
+        
+}
+
+
+#projects {
+    
+    background-color: violet;
+    display: grid;
+  
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 10px;
+    border: 2px solid black;
+
+}
+
+#accessability {
+    grid-column: 2/ span 5;
+}
+
+#contact-me {
+    background-color: yellowgreen;
+    grid-row: 5;
+    border: 2px solid black;
+}
+
+footer {
+    background-color: grey;
+    grid-row: 10;
+    grid-column: 1/ span 5;
+    text-align: center;
+}
+
+@media screen and (min-width: 600px) {
+   body {
+       background:tomato;}
+    #hero h2 { 
+           background-color: blue;
+       }
+    }
+
+@media screen and (min-width: 900px) {
+    body {
+        background-color: yellowgreen;
+        
+    }
+}
