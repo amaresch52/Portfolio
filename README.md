@@ -5,7 +5,7 @@
 -include links to completed projects
 -include contact info
 
-
+![alt text]
 
 ## Usage
 -Use the links at the top to go to different sections of the page for information about me and projects.

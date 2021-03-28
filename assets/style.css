@@ -65,7 +65,7 @@ nav a:hover {
 
 #about-me {
     background-color: yellow;}
-    img { max-width: 50%;
+    img { max-width: 25%;
         height: auto;
         display: block;
         margin-left: auto;
@@ -91,7 +91,7 @@ nav a:hover {
 }
 
 #contact-me {
-    background-color: yellowgreen;
+    background-color: coral;
     grid-row: 5;
     border: 2px solid black;
 }
