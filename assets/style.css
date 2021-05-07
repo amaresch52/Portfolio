@@ -1,118 +1,150 @@
 :root {
-    --primary: silver;
+  /*  --primary: silver;*/
 }
 /* grid set up for page */
-body{
-    background-color: var(--primary);
-    display: grid;
-    width: 100%;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 100px;
-    gap: 10px;
-}
-/* nav bar location and color*/
-nav {
-    background-color: cornflowerblue;
-    color:black;
-    grid-row: 1;
-    grid-column: 1 / span 4;
-    font-size: 200%;
-    border: 2px solid black;
+body {
+  color: lightgrey;
+  /* background-color: var(--primary);*/
+  /*display: grid;
+
+  width: 100%;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 100px;*/
+  gap: 10px;
+  font-family: Verdana, sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
 }
 
-ul {
-    list-style-type: none;
-    font-size: 20px;
+.container {
+  background-color: transparent;
+  padding: 5rem;
 }
+
 /*main area color and position*/
 main {
-    background-color: white;
-    grid-row: 2 / span 8;
-    grid-column: 1 / span 5;
-    border: 2px solid black;
+  background-color: white;
+  grid-row: 2 / span 8;
+  grid-column: 1 / span 5;
 }
 
-nav h1 {
-    font-size: 35px;
-    float: left;
-    text-align: center;
+.imageMe {
+    max-width: 75%;
+    height: 70%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2rem;
+    padding-left: 0rem;
+    padding-right: 0;
+
 }
-
-nav a {
-    float: right;
-    margin: 5px 5px;
-    }
-
-nav a:hover {
-    color:black;
-    text-transform: uppercase;
-    list-style: none;
-}
-
-#hero {
-    background-color: #d8bfd8;}
-    img { grid-area: 2/1/5/4 ;}
-
-
-.heroContents {
-    	
-	height: 50%;
-	background-position: center;
-	background-repeat: no-repeat;
-	position: relative;
-}
-}    
 
 #about-me {
-    background-color: yellow;}
-    img { max-width: 25%;
-        height: auto;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-       
+  /*background-color: black;*/
+  color: black;
+  text-align: center;
 }
 
+.projectImg {
+  
+  max-width: 75%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2rem;
+}
 
 #projects {
-    
-    background-color:cornflowerblue;
-    display: grid;
-  
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    gap: 10px;
-    border: 2px solid black;
-    
-}
-
-#accessability a {
-    grid-column: 2 / span 5;
+  color:black;
+  max-width: 100rem;
+  display: block;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2rem;
 }
 
 #contact-me {
-    background-color: coral;
-    grid-row: 5;
-    border: 2px solid black;
+  /*background-color: coral;*/
+  grid-row: 5;
+  color: black;
+  border: 2px solid black;
+}
+.display-container {
+  background-image: url("./glassrain.jpeg");
+  position: relative;
+  height: 700px;
+  padding: 0;
 }
 
+.content {
+  max-width: 980px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.center .bar {
+  display: inline-block;
+  width: auto;
+}
+.bar-block .center .bar-item {
+  text-align: center;
+}
+.center {
+  text-align: center !important;
+}
+.bar .bar-item {
+  padding: 8px 16px;
+  float: left;
+  width: auto;
+  border: none;
+  display: block;
+  outline: 0;
+}
+.bar .dropdown-hover,
+.bar .dropdown-click {
+  position: static;
+  float: left;
+}
+.button {
+  background-color: rgb(192, 192, 192) !important;
+  color: #000 !important;
+  border: none;
+  display: block;
+  padding: 8px 16px;
+  overflow: hidden;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+  white-space: nowrap;
+  border-radius: none;
+  margin: 0;
+  float: left;
+}
+.button:hover {
+  background-color: black !important;
+  color: grey !important;
+}
+
+
 footer {
-    background-color: grey;
-    grid-row: 10;
-    grid-column: 1/ span 5;
-    text-align: center;
+  /*  background-color: grey;*/
+  grid-row: 10;
+  grid-column: 1 / span 5;
+  text-align: center;
 }
 
 /* screen size changes*/
 @media screen and (min-width: 600px) {
-   body {
-       background: black;}
-       }
-    
+  body {
+    background: black;
+  }
+}
 
 @media screen and (min-width: 900px) {
-    body {
-        background-color: slategray;
-        
-    }
+  body {
+    background-color: white;
+  }
 }
