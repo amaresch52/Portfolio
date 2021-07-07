@@ -11,4 +11,4 @@
 -Use the links at the top to go to different sections of the page for information about me and projects.
 
 ## Credits
-- amaresch52@github
+- amaresch52@github    

@@ -1,14 +1,27 @@
 body {
   color: lightgrey;
+  background: linear-gradient(to top, white, whitesmoke);
   gap: 10px;
-  font-family: Verdana, sans-serif;
+  font-family: "Raleway", serif;
   font-size: 15px;
   line-height: 1.5;
 }
 
+h1,
+h2,
+h3 {
+  font-family: "Playfair Display", serif;
+}
+.background {
+  /*background-image: url("./link\ pic.jpg");*/
+  background: linear-gradient(to top, white, lightblue);
+  background-color: turquoise;
+  margin: auto;
+}
+
 .container {
-  background-color: transparent;
-  padding: 5rem;
+  /* background-color: transparent;*/
+  padding: 10rem;
 }
 
 /*main area color and position*/
@@ -19,23 +32,24 @@ main {
 }
 
 .imageMe {
-  max-width: 50%;
-  height: 70%;
+  max-width: 30%;
+  height: auto;
   display: block;
   margin-left: auto;
   margin-right: auto;
-  padding: 2rem;
-  padding-left: 0rem;
-  padding-right: 0;
+  margin-top: auto;
+  margin-bottom: auto;
+  padding-top: 4rem;
 }
 
 #about-me {
   color: black;
   text-align: center;
+  padding-top: 5rem;
 }
 
 .projectImg {
-  max-width: 75%;
+  max-width: 100%;
   height: auto;
   display: block;
   margin-left: auto;
@@ -50,12 +64,11 @@ main {
 
 #projects {
   color: black;
-  max-width: 100rem;
   display: block;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-  padding: 2rem;
+  padding: 10rem;
 }
 
 #contact-me,
@@ -65,17 +78,16 @@ main {
   margin-right: auto;
   text-align: center;
   color: black;
-  border: 2px solid black;
 }
 .display-container {
+  max-width: 100%;
+  height: auto;
   background-image: url("./glassrain.jpeg");
   position: relative;
-  height: 700px;
   padding: 0;
 }
 
 .content {
-  max-width: 980px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -112,7 +124,6 @@ main {
   overflow: hidden;
   text-decoration: none;
   text-align: center;
-  cursor: pointer;
   white-space: nowrap;
   border-radius: none;
   margin: 0;
@@ -133,7 +144,6 @@ main {
   cursor: pointer;
   white-space: nowrap;
   margin: 0;
-  float: center;
   border-radius: 12px;
 }
 
@@ -141,6 +151,11 @@ main {
   background-color: black !important;
   color: grey !important;
   border-radius: 12px;
+}
+
+section ul li {
+  display: inline-block;
+  padding: 0 20px;
 }
 
 footer {
@@ -151,13 +166,18 @@ footer {
 }
 
 /* screen size changes*/
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 576px) {
   body {
     background: black;
   }
 }
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 768px) {
+  body {
+    background-color: white;
+  }
+}
+@media screen and (min-width: 992px) {
   body {
     background-color: white;
   }
