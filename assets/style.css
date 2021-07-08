@@ -1,15 +1,17 @@
+root {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
 body {
   color: black;
   gap: 10px;
-  font-family: "Raleway", serif;
   font-size: 20px;
   line-height: 2;
 }
 
 h1,
 h2,
-h3,
-a {
+h3 {
   font-family: "Playfair Display", serif;
   font-style: oblique;
   font-weight: 800;
@@ -48,6 +50,7 @@ main {
   color: black;
   text-align: center;
   padding-top: 5rem;
+  background: linear-gradient(to top, whitesmoke, lightblue);
 }
 
 .projectImg {
@@ -149,6 +152,9 @@ main {
   white-space: nowrap;
   margin: 0;
   border-radius: 12px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-weight: bolder;
 }
 
 .repButton:hover {
@@ -170,7 +176,7 @@ footer {
 }
 
 /* screen size changes*/
-@media screen and (min-width: 576px) {
+@media screen and (max-width: 576px) {
   body {
     background: black;
   }
@@ -182,7 +188,7 @@ footer {
   }
 }
 
-@media (min-width: 768px) {
+@media (max-width: 768px) {
   body {
     background-color: white;
   }
