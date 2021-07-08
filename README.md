@@ -20,7 +20,7 @@
 
 link to profile - https://amaresch52.github.io/Portfolio/
 
-![](./assets/screenshot.jpg)
+![](./assets/profile_screenshot.png)
 
 #
 
