@@ -21,6 +21,7 @@ h3 {
   background: linear-gradient(to top, whitesmoke, lightblue);
   background-color: rgb(112, 243, 255);
   margin: auto;
+  padding-top: 5rem;
 }
 
 .container {
@@ -73,7 +74,7 @@ main {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-  padding: 10rem;
+  padding: 5rem;
 }
 
 #contact-me,
@@ -82,7 +83,6 @@ main {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  padding-top: 10rem;
   color: black;
   background: linear-gradient(to top, whitesmoke, lightblue);
 }
@@ -182,6 +182,9 @@ footer {
   }
   body.nav {
     display: none;
+  }
+  #projects {
+    padding: 0rem;
   }
   .btn-lg {
     font-size: 0.75rem;
