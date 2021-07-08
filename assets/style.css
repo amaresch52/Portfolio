@@ -9,12 +9,17 @@ body {
   line-height: 2;
 }
 
-h1,
+h1 {
+  font-family: Tahoma, Verdana, serif;
+  font-style: normal;
+  font-weight: 900;
+  padding: 2rem;
+}
 h2,
 h3 {
-  font-family: "Playfair Display", serif;
+  font-family: Verdana, serif;
   font-style: oblique;
-  font-weight: 800;
+  font-weight: 900;
   padding: 2rem;
 }
 .background {
@@ -208,6 +213,6 @@ footer {
 }
 @media screen and (min-width: 992px) {
   body {
-    background-color: cornflowerblue;
+    background: linear-gradient(to bottom, whitesmoke, cornflowerblue);
   }
 }
