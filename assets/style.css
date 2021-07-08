@@ -18,7 +18,7 @@ h3 {
 }
 .background {
   /*background-image: url("./link\ pic.jpg");*/
-  background: linear-gradient(to top, whitesmoke, lightblue);
+  background: linear-gradient(to top, whitesmoke, coral);
   background-color: rgb(112, 243, 255);
   margin: auto;
   padding-top: 5rem;
@@ -77,14 +77,21 @@ main {
   padding: 5rem;
 }
 
-#contact-me,
-#resume {
+#contact-me {
   display: block;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
   color: black;
   background: linear-gradient(to top, whitesmoke, lightblue);
+}
+#resume {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  color: black;
+  background: linear-gradient(to top, whitesmoke, coral);
 }
 .display-container {
   max-width: 100%;
@@ -127,7 +134,7 @@ main {
   color: #000 !important;
   border: none;
   display: block;
-  padding: 8px 16px;
+  padding: 8px 16px 5px;
   overflow: hidden;
   text-decoration: none;
   text-align: center;
